@@ -5,6 +5,8 @@ services:
     build:
       context: ./
       dockerfile: Dockerfile
+    environment:
+      - PORT
     ports:
       - 5006:${PORT}
     volumes:
